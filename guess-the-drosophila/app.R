@@ -53,17 +53,16 @@ quiz_data <- list(
   ))
 
 
-# ui
+# creating a ui
 ui <- fluidPage(
   titlePanel("Guess the drosophila!"),
   fluidRow(
     column(6, align = "center", 
-           # Correct the imageOutput ID to match the server output ID
-           imageOutput("quiz_image")
+           imageOutput("quiz_image") # will call it quiz image for now for reference 
     ),
     column(6,
            h3(textOutput("question")),
-           radioButtons("choices", "Select your answer:", choices = ""),
+           radioButtons("choices", "Select your answer:", choices = ""), # wull give multiple choice options
            actionButton("submit", "Submit"),
            verbatimTextOutput("result")
     )
