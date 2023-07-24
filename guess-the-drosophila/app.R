@@ -52,7 +52,6 @@ quiz_data <- list(
     image_filename = "images/drosophila_testacea.png"
   ))
 
-
 # creating a ui
 ui <- fluidPage(
   titlePanel("Guess the drosophila!"),
