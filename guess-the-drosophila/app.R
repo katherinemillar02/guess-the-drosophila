@@ -4,49 +4,49 @@ library(shiny)
 # questions and choices 
 quiz_data <- list(
   list(
-    question = "What is the species of the fly in the picture?",
+    question = "What is the drosophila?",
     choices = c("Drosophila obscura", "Drosophila subobscura", "Drosophila simulans"),
     answer = "Drosophila subobscura",
     image_filename = "images/drosophila_subobscura.png"
   ),
   list(
-    question = "What is the species of the fly in the picture?",
+    question = "What is the drosophila?",
     choices = c("Drosophila melanogaster", "Drosophila histrio", "Drosophila simulans"),
     answer = "Drosophila histrio",
     image_filename = "images/drosophila_histrio.png"
   ), 
   list(
-    question = "What is the species of the fly in the picture?",
+    question = "What is the drosophila?",
     choices = c("Drosophila histrio", "Drosophila melanogaster", "Drosophila simulans"),
     answer = "Drosophila melanogaster",
     image_filename = "images/drosophila_melanogaster.png"
   ), 
   list(
-    question = "What is the species of the fly in the picture?",
+    question ="What is the drosophila?",
     choices = c("Drosophila simulans", "Drosophila funebris", "Drosophila suzukii"),
     answer = "Drosophila suzukii",
     image_filename = "images/drosophila_suzukii.png"
   ),
   list(
-    question = "What is the species of the fly in the picture?",
+    question = "What is the drosophila?",
     choices = c("Drosophila melanogaster", "Drosophila simulans", "Drosophila histrio"),
     answer = "Drosophila simulans",
     image_filename = "images/drosophila_simulans.png"
   ),
   list(
-    question = "What is the species of the fly in the picture?",
+    question = "What is the drosophila?",
     choices = c("Drosophila suzukii", "Drosophila subobscura", "Drosophila obscura"),
     answer = "Drosophila obscura",
     image_filename = "images/drosophila_obscura.png"
   ),
   list(
-    question = "What is the species of the fly in the picture?",
+    question = "What is the drosophila?",
     choices = c("Drosophila funebris", "Drosophila obscura", "Drosophila melanogaster"),
     answer = "Drosophila funebris",
     image_filename = "images/drosophila_funebris.png"
   ),
   list(
-    question = "What is the species of the fly in the picture?",
+    question = "What is the drosophila?",
     choices = c("Drosophila melanogaster", "Drosophila kuntzei", "Drosophila testacea"),
     answer = "Drosophila testacea",
     image_filename = "images/drosophila_testacea.png"
@@ -61,8 +61,8 @@ ui <- fluidPage(
     ),
     column(6,
            h3(textOutput("question")),
-           radioButtons("choices", "Select your answer:", choices = ""), # wull give multiple choice options
-           actionButton("submit", "Submit"),
+           radioButtons("choices", "Which drosophila?:", choices = ""), # will give multiple choice options
+           actionButton("submit", "Next"),
            verbatimTextOutput("result")
     )
   )
@@ -76,7 +76,7 @@ server <- function(input, output, session) {
     question_data <- quiz_data[[current_question()]]
     updateRadioButtons(
       session, "choices",
-      label = "Select the fly:",
+      label = "Choose the right drosophila:",
       choices = question_data$choices
     )
     
