@@ -72,7 +72,7 @@ ui <- fluidPage(
 server <- function(input, output, session) {
   current_question <- reactiveVal(1)
   
-  observe({
+  observe({ # may be the simple choice 
     question_data <- quiz_data[[current_question()]]
     updateRadioButtons(
       session, "choices",
