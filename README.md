@@ -6,7 +6,7 @@ This is *version 1* of a small quiz dedicated to being tested on different speci
 
 https://6cu5ad-katie-millar.shinyapps.io/guess-the-drosophila/
 
-<img title="droso pic" alt="drosopAlt text" src="/quiz.screenshot.png" width=500 height=300>
+<img title="droso pic" alt="drosopAlt text" src="/quiz.screenshot.png" width=600 height=300>
 
 
 #### Still to fix: 
