@@ -1,17 +1,20 @@
-# Guess the Drosophila quiz 
+# Guess the Drosophila species 
 
- version 1 
+## Version 1 
+
+This is *version 1* of a small quiz dedicated to being tested on different species of *Drosophila*
+
+https://6cu5ad-katie-millar.shinyapps.io/guess-the-drosophila/
 
 
-Still to fix: 
+
+
+#### Still to fix: 
 - Don't allow user to see the answer before submitting 
 - Give an overall of the persons score at the end 
 - Maybe change some of the titles
-- i have used the reactive() function to an extent but want to use it more?? 
+- I have used the reactive() function to an extent but want to use it more?? 
+- Use observe() part of reactiveValues()
+- Chapter 16 in Mastering shiny 
+- Can change reactive values? 
 
-OPEN TO ANYMORE FEEDBACK
-
-observe()
-part of reactiveValues()
-- chapter 16 in Mastering shiny 
-- can change reactive values? 
